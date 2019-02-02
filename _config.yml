@@ -62,8 +62,9 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: 96757fffd7d6d80b3e84                            #生成的clientID
-  clientSecret: cf4a527543a1fadbc62b4c48d304c21deb8674b6    #生成的clientSecret
+  clientID: 25a5ecf158e0a2f20e48                            #生成的clientID
+  clientSecret: 76910af5179c64448d462f8ed305e6c688c0e747
+     #生成的clientSecret
   repo: yongridada.github.io    #仓库名称
   owner: yongridada    #github用户名
   admin: yongridada
