@@ -57,17 +57,17 @@ kramdown:
 
 # 评论系统
 # Disqus（https://disqus.com/）
-disqus_username: yongridada
+#disqus_username: yongridada
 
 # Gitalk
-#gitalk:
-#  enable: true    #是否开启Gitalk评论
-#  clientID: 07029ef65e7271cc3af7                            #生成的clientID
-#  clientSecret: 724b0416f64bb32a672ae80448c4ae1b8f43d8b8    #生成的clientSecret
-#  repo: yongridada.github.io    #仓库名称
-#  owner: yongridada    #github用户名
-#  admin: yongridada
-#  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: 07029ef65e7271cc3af7                            #生成的clientID
+  clientSecret: 724b0416f64bb32a672ae80448c4ae1b8f43d8b8    #生成的clientSecret
+  repo: yongridada.github.io    #仓库名称
+  owner: yongridada    #github用户名
+  admin: yongridada
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 
 # 统计
