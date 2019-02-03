@@ -1,7 +1,7 @@
 # Site settings
 title:  Mr chang|昶先生
 SEOTitle: Mr chang的博客 | 昶先生
-header-img: img/background.jpg
+header-img: img/头像.jpg
 email: yongridada@gmail.com
 description: "大家一起交流啊"
 keyword: "Mr chang, BY Blog, Mr chang的博客, chang, 昶先生, Mr chang的博客|昶先生"
@@ -57,14 +57,13 @@ kramdown:
 
 # 评论系统
 # Disqus（https://disqus.com/）
-#disqus_username: riyong
+# disqus_username: qiubaiying
 
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: f0cfefe4cd427d7b93f2                            #生成的clientID
-  clientSecret: 827c3b06139a9e51f3d6d86f0ec81fa09fc30a30
-     #生成的clientSecret
+  clientSecret: 827c3b06139a9e51f3d6d86f0ec81fa09fc30a30    #生成的clientSecret
   repo: yongridada.github.io    #仓库名称
   owner: yongridada    #github用户名
   admin: yongridada
