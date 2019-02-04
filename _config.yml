@@ -18,11 +18,11 @@ sidebar-avatar: /img/头像.jpg      # use absolute URL, seeing it's used in bot
 
 # SNS settings
 RSS: false
-weibo_username:     yongri大大
+weibo_username: yongri大大
 zhihu_username:     
-github_username:    yongridada
+github_username: yongridada
 facebook_username:  
-jianshu_username:   eec2dbb04799
+jianshu_username: eec2dbb04799
 #twitter_username:   
 
 
