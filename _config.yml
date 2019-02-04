@@ -99,8 +99,8 @@ service-worker: true
 # Friends
 friends: [
     {
-        title: "",
-        href: ""
+        title: "简书・yongridada",
+        href: "https://www.jianshu.com/u/eec2dbb04799"
     },{
         title: "",
         href: ""
