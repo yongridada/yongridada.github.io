@@ -5,7 +5,7 @@ header-img: img/background.jpg
 email: yongridada@gmail.com
 description: "大家一起交流啊"
 keyword: "Mr chang, Mr chang Blog, Mr chang的博客, chang, 昶先生, Mr chang的博客|昶先生"
-url: "http://yongridada.github.io"          # your host, for absolute URL
+url: "http://mr-chang.top"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/yongridada/yongridada.github.io.git" # you code repository
 
