@@ -1,226 +1,226 @@
 ---
-layout: default
+布局：默认
 ---
 
-<!-- Image to hack wechat -->
-<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
-<!-- <img src="{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}" width="0" height="0"> -->
+<！ -图片来破解微信- >
+<！ - <img src =“/ img / icon_wechat.png”width =“0”height =“0”> - >
+<！ - <img src =“{{site.baseurl}} / {％if page.header-img％} {{page.header-img}} {％else％} {{site.header-img}} {％endif％}“width =”0“height =”0“> - >
 
-<!-- Post Header -->
-<style type="text/css">
-    header.intro-header{
-        position: relative;
-        background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')
+<！ -帖子标题- >
+< style  type = “ text / css ” >
+    header .intro-header {
+        位置：相对 ;
+        background-image： url（ ' {{site.baseurl}} / {％if page.header-img％} {{page.header-img}} {％else％} {{site.header-img}} {％ endif％} '）
     }
-    {% if page.header-mask %}
-    header.intro-header .header-mask{
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: rgba(0,0,0, {{ page.header-mask }});
+    {％if  page。header-mask％}
+    header .intro-header  .header-mask {
+        宽度： 100 ％ ;
+        身高： 100 ％ ;
+        位置：绝对 ;
+        背景： RGBA（ 0， 0， 0，{{页 .header掩模}}）;
     }
-    {% endif %}
-</style>
-<header class="intro-header" >
-    <div class="header-mask"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <div class="tags">
-                        {% for tag in page.tags %}
-                        <a class="tag" href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
-                        {% endfor %}
-                    </div>
-                    <h1>{{ page.title }}</h1>
-                    {% comment %}
-                        always create a h2 for keeping the margin , Hux
-                    {% endcomment %}
-                    {% comment %} if page.subtitle {% endcomment %}
-                    <h2 class="subheading">{{ page.subtitle }}</h2>
-                    {% comment %} endif {% endcomment %}
-                    <span class="meta">Posted by {% if page.author %}{{ page.author }}{% else %}{{ site.title }}{% endif %} on {{ page.date | date: "%B %-d, %Y" }}</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
+    {％endif％}
+</ style >
+< header  class = “ intro-header ” >
+    < div  class = “ header-mask ” > </ div >
+    < div  class = “ container ” >
+        < div  class = “ row ” >
+            < div  class = “ col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ” >
+                < div  class = “ post-heading ” >
+                    < div  class = “ tags ” >
+                        {％for page in page.tags％}
+                        < 一 类 = “标签”  HREF = “ {{site.baseurl}} /标签/＃{{标签}} ” 标题 = “ {{标签}} ” > {{标签}} </ 一 >
+                        {％endfor％}
+                    </ div >
+                    < h1 > {{page.title}} </ h1 >
+                    {％comment％}
+                        总是创建一个h2来保持边际，Hux
+                    {％endcomment％}
+                    {％comment％} if page.subtitle {％endcomment％}
+                    < h2  class = “ subheading ” > {{page.subtitle}} </ h2 >
+                    {％comment％} endif {％endcomment％}
+                    < span  class = “ meta ” >发布者{％if page.author％} {{page.author}} {％else％} {{site.title}} {％endif％} {{page.date |} 日期：“％B％-d，％Y”}} </ span >
+                </ div >
+            </ div >
+        </ div >
+    </ div >
+</ header >
 
-<!-- Post Content -->
-<article>
-    <div class="container">
-        <div class="row">
+<！ -发布内容- >
+< article >
+    < div  class = “ container ” >
+        < div  class = “ row ” >
 
-    <!-- Post Container -->
-            <div class="
+    <！ -邮政集装箱- >
+            < div  class = “
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
-                post-container">
+                后集装箱“ >
 
-                {{ content }}
+                {{content}}
 
-                <hr style="visibility: hidden;">
+                < hr  style = “ visibility：hidden ; ” >
 
-                <ul class="pager">
-                    {% if page.previous.url %}
-                    <li class="previous">
-                        <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">
-                        Previous<br>
-                        <span>{{page.previous.title}}</span>
-                        </a>
-                    </li>
-                    {% endif %}
-                    {% if page.next.url %}
-                    <li class="next">
-                        <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">
-                        Next<br>
-                        <span>{{page.next.title}}</span>
-                        </a>
-                    </li>
-                    {% endif %}
-                </ul>
+                < ul  class = “ pager ” >
+                    {％if page.previous.url％}
+                    < li  class = “ previous ” >
+                        < a  href = “ {{page.previous.url | prepend：site.baseurl | replace：'//'，'/'}} ”  data-toggle = “ tooltip ”  data-placement = “ top ”  title = “ { {page.previous.title}} “ >
+                        先前< BR >
+                        < span > {{page.previous.title}} </ span >
+                        </ a >
+                    </ li >
+                    {％ 万一 ％}
+                    {％if page.next.url％}
+                    < li  class = “ next ” >
+                        < a  href = “ {{page.next.url | prepend：site.baseurl | replace：'//'，'/'}} ”  data-toggle = “ tooltip ”  data-placement = “ top ”  title = “ { {page.next.title}} “ >
+                        下一步< BR >
+                        < span > {{page.next.title}} </ span >
+                        </ a >
+                    </ li >
+                    {％ 万一 ％}
+                </ ul >
 
 
-                <!--Gitalk评论start  -->
-                {% if site.gitalk.enable %}
-                <!-- 引入Gitalk评论插件  -->
-                <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-                <script src="https://unpkg.com/gitalk@latest/dist/gitalk.min.js"></script>
-                <div id="gitalk-container"></div>
-                <!-- 引入一个生产md5的js，用于对id值进行处理，防止其过长 -->
-                <!-- Thank DF:https://github.com/NSDingFan/NSDingFan.github.io/issues/3#issuecomment-407496538 -->
-                <script src="{{ site.baseurl }}/js/md5.min.js"></script>
-                <script type="text/javascript">
-                    var gitalk = new Gitalk({
-                    clientID: '{{site.gitalk.clientID}}',
-                    clientSecret: '{{site.gitalk.clientSecret}}',
-                    repo: '{{site.gitalk.repo}}',
-                    owner: '{{site.gitalk.owner}}',
-                    admin: ['{{site.gitalk.admin}}'],
-                    distractionFreeMode: {{site.gitalk.distractionFreeMode}},
-                    id: md5(location.pathname),
-                    });
-                    gitalk.render('gitalk-container');
-                </script>
-                {% endif %}
-                <!-- Gitalk end -->
+                <！ - Gitalk评论开始   - >
+                {％if site.gitalk.enable％}
+                <！ -引入Gitalk评论插件   - >
+                < link  rel = “ stylesheet ”  href = “ https://unpkg.com/gitalk/dist/gitalk.css ” >
+                < script  src = “ https://unpkg.com/gitalk@latest/dist/gitalk.min.js ” > </ script >
+                < div  id = “ gitalk-container ” > </ div >
+                <！ -引入一个生产MD5的JS，用于对ID值进行处理，防止其过长- >
+                <！ -感谢DF：https：//github.com/NSDingFan/NSDingFan.github.io/issues/3#issuecomment-407496538 - >
+                < script  src = “ {{site.baseurl}} / js / md5.min.js ” > </ script >
+                < script  type = “ text / javascript ” >
+                    var gitalk =  new  Gitalk（{
+                    clientID ： ' {{site.gitalk.clientID}} '，
+                    clientSecret ： ' {{site.gitalk.clientSecret}} '，
+                    repo ： ' {{site.gitalk.repo}} '，
+                    所有者： ' {{site.gitalk.owner}} '，
+                    admin ： [ ' {{site.gitalk.admin}} ' ]，
+                    distractionFreeMode ： {{ site。gitalk。distractionFreeMode }}，
+                    ID ： MD5（位置，路径名）
+                    }）;
+                    gitalk。渲染（' gitalk-container '）;
+                </ script >
+                {％ 万一 ％}
+                <！ - Gitalk结束- >
 
-                {% if site.disqus_username %}
-                <!-- disqus 评论框 start -->
-                <div class="comment">
-                    <div id="disqus_thread" class="disqus-thread"></div>
-                </div>
-                <!-- disqus 评论框 end -->
-                {% endif %}
+                {％if site.disqus_username％}
+                <！ - disqus评论框开始- >
+                < div  class = “ comment ” >
+                    < div  id = “ disqus_thread ”  class = “ disqus-thread ” > </ div >
+                </ div >
+                <！ - disqus评论框结束- >
+                {％ 万一 ％}
 
-            </div>  
+            </ div >  
 
-    <!-- Side Catalog Container -->
-        {% if page.catalog %}
-            <div class="
+    <！ - Side Catalog Container - >
+        {％if page.catalog％}
+            < div  class = “
                 col-lg-2 col-lg-offset-0
-                visible-lg-block
-                sidebar-container
-                catalog-container">
-                <div class="side-catalog">
-                    <hr class="hidden-sm hidden-xs">
-                    <h5>
-                        <a class="catalog-toggle" href="#">CATALOG</a>
-                    </h5>
-                    <ul class="catalog-body"></ul>
-                </div>
-            </div>
-        {% endif %}
+                可见LG块
+                侧边栏容器
+                catalog-container “ >
+                < div  class = “ side-catalog ” >
+                    < hr  class = “ hidden-sm hidden-xs ” >
+                    < h5 >
+                        < 一 类 = “目录肘节”  HREF = “＃” > CATALOG </ 一 >
+                    </ h5 >
+                    < ul  class = “ catalog-body ” > </ ul >
+                </ div >
+            </ div >
+        {％ 万一 ％}
 
-    <!-- Sidebar Container -->
-            <div class="
+    <！ -补充工具栏- >
+            < div  class = “
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
-                sidebar-container">
+                sidebar-container “ >
 
-                <!-- Featured Tags -->
-                {% if site.featured-tags %}
-                <section>
-                    <hr class="hidden-sm hidden-xs">
-                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-                    <div class="tags">
-                        {% for tag in site.tags %}
-                            {% if tag[1].size > {{site.featured-condition-size}} %}
-                                <a href="/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">
-                                    {{ tag[0] }}
-                                </a>
-                            {% endif %}
-                        {% endfor %}
-                    </div>
-                </section>
-                {% endif %}
+                <！ -特色标签- >
+                {％if site.featured-tags％}
+                < section >
+                    < hr  class = “ hidden-sm hidden-xs ” >
+                    < H5 > < 一个 HREF = “ /标签/ ” >主要标记</ 一 > </ H5 >
+                    < div  class = “ tags ” >
+                        {％for site.tags％}中的标记
+                            {％if tag [1] .size> {{site.featured-condition-size}}％}
+                                < 一个 HREF = “ /标签/＃{{代码[0]}} ” 标题 = “ {{标签[0]}} ” 的rel = “ {{标签[1] .size}} ” >
+                                    {{tag [0]}}
+                                </ a >
+                            {％ 万一 ％}
+                        {％endfor％}
+                    </ div >
+                </ section >
+                {％ 万一 ％}
 
-                <!-- Friends Blog -->
-                {% if site.friends %}
-                <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
-                    {% for friend in site.friends %}
-                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
-                    {% endfor %}
-                </ul>
-                {% endif %}
-            </div>
-        </div>
-    </div>
-</article>
-
-
-{% if site.disqus_username %}
-<!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES * * */
-    var disqus_shortname = "{{site.disqus_username}}";
-    var disqus_identifier = "{{page.id}}";
-    var disqus_url = "{{site.url}}{{page.url}}";
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<!-- disqus 公共JS代码 end -->
-{% endif %}
+                <！ -朋友博客- >
+                {％if site.friends％}
+                < hr >
+                < h5 >朋友</ h5 >
+                < ul  class = “ list-inline ” >
+                    {％for site.friends％}中的朋友
+                        < 锂 > < 一个 HREF = “ {{friend.href}} ” > {{friend.title}} </ 一 > </ 李 >
+                    {％endfor％}
+                </ ul >
+                {％ 万一 ％}
+            </ div >
+        </ div >
+    </ div >
+</ article >
 
 
-{% if site.anchorjs %}
-<!-- async load function -->
-<script>
-    function async(u, c) {
-      var d = document, t = 'script',
-          o = d.createElement(t),
-          s = d.getElementsByTagName(t)[0];
-      o.src = u;
-      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
-      s.parentNode.insertBefore(o, s);
+{％if site.disqus_username％}
+<！ - disqus公共JS代码启动（一个网页只需插入一次）- >
+< script  type = “ text / javascript ” >
+    / * * * CONFIGURATION VARIABLES * * * /
+    var disqus_shortname =  “ {{site.disqus_username}} ” ;
+    var disqus_identifier =  “ {{page.id}} ” ;
+    var disqus_url =  “ {{site.url}} {{page.url}} ” ;
+    （function（）{
+        var dsq =  document。createElement（' script '）; dsq。type  =  ' text / javascript ' ; dsq。async  =  true ;
+        dsq。src  =  ' // '  + disqus_shortname +  '。 disqus.com / embed.js ' ;
+        （文件。的getElementsByTagName（'头部'）[ 0 ] ||  文件。的getElementsByTagName（'体'）[ 0 ]）。appendChild（dsq）;
+    }）（）;
+</ script >
+<！ - disqus公共JS代码结束- >
+{％ 万一 ％}
+
+
+{％if site.anchorjs％}
+<！ -异步加载功能- >
+< script >
+    function  async（u，c）{
+      var d =  document，t =  ' script '，
+          o =  d。createElement（t），
+          s =  d。getElementsByTagName（t）[ 0 ];
+      o。src  = u;
+      如果（c）{ o。addEventListener（' load '，function（e）{ c（null，e）;}，false）; }
+      s。parentNode。insertBefore（o，s）;
     }
-</script>
-<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
-<script>
-    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
-        // BY Fix:去除标题前的‘#’ issues:<https://github.com/qiubaiying/qiubaiying.github.io/issues/137>
+</ script >
+<！ - anchor-js，Doc：http：//bryanbraun.github.io/anchorjs/ - >
+< script >
+    异步（“ //cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js ”，函数（）{
+        // BY Fix：去除标题前的'＃'问题：<https://github.com/qiubaiying/qiubaiying.github.io/issues/137>
         // anchors.options = {
-        //   visible: 'always',
-        //   placement: 'right',
-        //   icon: '#'
+        //    可见：'总是'，
+        //    placement：'right'，
+        //    图标：'＃'
         // };
-        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
-    })
-</script>
-<style>
-    /* place left on bigger screen */
-    @media all and (min-width: 800px) {
-        .anchorjs-link{
-            position: absolute;
-            left: -0.75em;
-            font-size: 1.1em;
-            margin-top : -0.1em;
+        锚点。add（）。remove（'. intro-header h1 '）。删除（' .subheading '）。remove（'. sidebar-container h5 '）;
+    }）
+</ script >
+< style >
+    / *放在更大的屏幕上* /
+    @media  all  和（min-width：800 px）{
+        .anchorjs-link {
+            位置：绝对 ;
+            左： -0.75 em ;
+            font-size： 1.1 em ;
+            margin-top： -0.1 em ;
         }
     }
-</style>
-{% endif %}
+</ style >
+{％ 万一 ％}
